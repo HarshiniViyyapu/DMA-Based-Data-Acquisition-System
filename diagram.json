@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Harshini Viyyapu",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-st-nucleo-c031c6", "id": "nucleo", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 104.3, "left": 307, "attrs": {} }
+  ],
+  "connections": [
+    [ "$serialMonitor:TX", "nucleo:PA3", "", [] ],
+    [ "$serialMonitor:RX", "nucleo:PA2", "", [] ],
+    [ "pot1:GND", "nucleo:GND.5", "black", [ "v38.4", "h-297.6" ] ],
+    [ "pot1:VCC", "nucleo:3V3.2", "red", [ "v28.8", "h-269.6" ] ],
+    [ "pot1:SIG", "nucleo:A4", "green", [ "v115.2", "h-307.6" ] ]
+  ],
+  "dependencies": {}
+}
